@@ -36,6 +36,7 @@ jQueryを使わないオレオレコンテンツスライダー
         return _this.slide("prev");
       }, false);
       this.prevNav.style.opacity = 0;
+      this.element.style.left = 0;
       return this.element.style.width = (this.slideWidth * this.length) + "px";
     },
     slide: function(direction) {
